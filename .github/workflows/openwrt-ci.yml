@@ -9,9 +9,9 @@
 
 name: OpenWrt-CI-2020-02-15
 
-# on:
-#   push:
-#     branches: 
+on:
+  push:
+    branches: 
       - master
   #     ↑↑↑ 改成你的分支名, 一般是master
   # schedule:
@@ -167,6 +167,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
+          CONFIG_PACKAGE_luci-app-adbyby-plus=y
           EOF
 
           # LuCI主题:
